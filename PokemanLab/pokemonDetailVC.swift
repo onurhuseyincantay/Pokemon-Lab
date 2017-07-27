@@ -19,10 +19,26 @@ class pokemonDetailVC : UIViewController {
     @IBOutlet weak var lblBaseAttack: UILabel!
     @IBOutlet weak var lblPokeName: UILabel!
     @IBOutlet weak var imgCurrentEvo: UIImageView!
+    
+    /*@IBOutlet weak var viewBio: UIView!
+    @IBOutlet weak var viewMove: UIView!
+    @IBOutlet weak var segmentControl: NSLayoutConstraint!*/
     @IBOutlet weak var imgNextEvo: UIImageView!
     @IBOutlet weak var lblEvo: UILabel!
     var pokemon : Pokemon!
 
+  /*  @IBAction func segmentSelected(_ sender: UISegmentedControl) {
+        switch sender.selectedSegmentIndex {
+        case 1:
+            viewMove.isHidden = true
+            viewBio.isHidden = false; break
+        case 0:
+            viewBio.isHidden = true
+            viewMove.isHidden = false; break
+        default : break
+        }
+    }*/
+   
     override func viewDidLoad() {
        super.viewDidLoad()
        lblPokeName.text = pokemon.name
